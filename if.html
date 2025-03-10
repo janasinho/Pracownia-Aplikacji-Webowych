@@ -44,27 +44,12 @@
         *. 
         *. 
         *. 
-        *. Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i wyświetli większą z nich.
-        *. Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny. Wyświetl odpowiedni komunikat.
-        *. Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
-
-        *. Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
-        Na  podstawie tych danych oblicz wskaźnik BMI (Body Mass Index) i wyświetl odpowiedni komunikat informujący o stanie zdrowia.
-        poniżej 16 - wygłodzenie
-        16 - 16.99 - wychudzenie
-        17 - 18.49 - niedowagę
-        18.5 - 24.99 - wagę prawidłową
-        25.0 - 29.9 - nadwagę
-        30.0 - 34.99 - I stopień otyłości
-        35.0 - 39.99 - II stopień otyłości
-        powyżej 40.0 - otyłość skrajną
-
-        Wzór:
-
-        BMI = masa/wysokość^2
-
-        *. Napisz program, który poprosi użytkownika o podanie długości trzech odcinków i sprawdzi, czy można zbudować z nich trójkąt. Wyświetl odpowiedni komunikat.
-        *. Napisz program, który poprosi użytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeśli jest to możliwe. Wyświetl wynik lub odpowiedni komunikat, jeśli liczba jest ujemna.
+        *. 
+        *. 
+        *. 
+        *. 
+        *. 
+        *. 
         *. Program sprawdzający czy podana data jest poprawna (np. sprawdzając, czy dzień jest z zakresu od 1 do 31, miesiąc od 1 do 12 itd.)
 
         */
@@ -216,39 +201,108 @@
             if(number == 1)
                 document.writeln("poniedziałek <br/>")
             else
-                {
-                        if (number == 2)
-                            document.writeln("wtorek <br/>")
-                        else
-                        {
-                            if (number == 3)
-                                document.writeln("środa <br/>")
+                
+                if (number == 2)
+                    document.writeln("wtorek <br/>")
+                else
+                    
+                    if (number == 3)
+                        document.writeln("środa <br/>")
+                    else 
+                        
+                        if (number == 4)
+                            document.writeln("czwartek <br/>")
+                        else 
+                            
+                            if (number == 5)
+                                document.writeln("piątek <br/>")
                             else 
-                                {
-                                if (number == 4)
-                                    document.writeln("czwartek <br/>")
+                                
+                                if (number == 6)
+                                    document.writeln("sobota <br/>")
                                 else 
-                                    {
-                                    if (number == 5)
-                                        document.writeln("piątek <br/>")
-                                    else 
-                                        {
-                                        if (number == 6)
-                                            document.writeln("sobota <br/>")
-                                        else 
-                                            {
-                                            if (number == 6)
-                                                document.writeln("sobota <br/>")
-                                            else
-                                            }
-                                        }
-                                    }
-                                    
-                                }
-                        }
-                }
-            
+                            
+                                    if (number == 7)
+                                        document.writeln("niedziela <br/>")
+
         }
+
+        //Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i wyświetli większą z nich.
+        function task9()
+        {
+
+        }
+
+        //Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny. Wyświetl odpowiedni komunikat.
+        function task10()
+        {
+
+        }
+
+        //Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
+        function task11()
+        {
+
+        }
+
+        /*Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
+        Na  podstawie tych danych oblicz wskaźnik BMI (Body Mass Index) i wyświetl odpowiedni komunikat informujący o stanie zdrowia.
+        poniżej 16 - wygłodzenie
+        16 - 16.99 - wychudzenie
+        17 - 18.49 - niedowagę
+        18.5 - 24.99 - wagę prawidłową
+        25.0 - 29.9 - nadwagę
+        30.0 - 34.99 - I stopień otyłości
+        35.0 - 39.99 - II stopień otyłości
+        powyżej 40.0 - otyłość skrajną
+
+        Wzór:
+
+        BMI = masa/wysokosc^2 */
+        function task12()
+        {
+            var weight, height;
+            weight = 65;
+            height = 1.80;
+
+            var BMI = weight / (height * weight);
+            if (BMI < 16 )
+                document.writeln("wygłodnienie");
+            else if (BMI < 17)
+                document.writeln("wychudzenie");
+            else if (BMI < 18.5)
+                document.writeln("niedowaga");
+            else if (BMI < 25)
+                document.writeln("waga prawidłowa");
+            else if (BMI < 30)
+                document.writeln("nadwaga");
+            else if (BMI < 35)
+                document.writeln("I stopien otylosci");
+            else if (BMI < 40)
+                document.writeln("II stopien otylosci");
+            else if (BMI > 40)
+                document.writeln("otylosc skrajna");
+        }
+
+        //Napisz program, który poprosi użytkownika o podanie długości trzech odcinków i sprawdzi, czy można zbudować z nich trójkąt. Wyświetl odpowiedni komunikat.
+        function task13()
+        {
+            var firstSide,secondSide,thirdSide;
+            firstSide = 5;
+            secondSide = 20;
+            thirdSide = 8;
+            if (firstSide < (secondSide + thirdSide) && secondSide < (firstSide + thirdSide) && thirdSide < (firstSide + secondSide))
+                document.writeln("da sie zrobic trojkat")
+            else  
+                document.writeln("nie da sie zrobic trojkata")
+        }
+
+        //Napisz program, który poprosi użytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeśli jest to możliwe. Wyświetl wynik lub odpowiedni komunikat, jeśli liczba jest ujemna.
+        function task13()
+        {
+            var number = 8;
+        }
+
 
         //task1();
         //task2();
@@ -257,7 +311,15 @@
         //task5();
         //task6();
         //task7();
-        task8();
+        //task8();
+        //task9();
+        //task10();
+        //task11();
+        //task12();
+        //task13();
+        //task14();
+
+
     </script>
 </body>
 </html>
